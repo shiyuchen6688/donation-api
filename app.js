@@ -1,6 +1,6 @@
 require("dotenv").config();
-const { errorHandlerMiddleware } = require("./middlewares/error_handler");
-const { notFound } = require("./middlewares/not-found");
+const errorHandlerMiddleware = require("./middlewares/error_handler");
+const notFoundMiddleware = require("./middlewares/not-found");
 const itemRouter = require("./routes/items")
 
 const express = require("express");
@@ -26,7 +26,7 @@ app.use("/api/v1/items", itemRouter);
 
 // handling errors
 app.use(notFoundMiddleware);
-app.use(errorMiddleware);
+app.use(errorHandlerMiddleware);
 
 port = process.env.PORT || 5000
 

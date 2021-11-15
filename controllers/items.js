@@ -1,5 +1,5 @@
-const Item = import("../models/item.js")
-const asyncWrapper = import("../middlewares/async")
+const Item = require("../models/item.js")
+const asyncWrapper = require("../middlewares/async")
 
 console.log(asyncWrapper)
 

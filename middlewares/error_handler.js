@@ -3,4 +3,4 @@ const errorHandlerMiddleware = async (err, req, res, next) => {
     next()
 }
 
-module.exports = { errorHandlerMiddleware }
+module.exports = errorHandlerMiddleware
