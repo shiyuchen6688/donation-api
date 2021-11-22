@@ -1,0 +1,32 @@
+[
+  {
+    "name": "accent chair",
+    "distance": 25,
+    "condition": "Like New",
+    "age": 4
+  },
+  {
+    "name": "albany sectional",
+    "distance": 109,
+    "condition": "Very Good",
+    "age": 5
+  },
+  {
+    "name": "albany table",
+    "distance": 309,
+    "condition": "Very Good",
+    "age": 4.9
+  },
+  {
+    "name": "armchair",
+    "distance": 125,
+    "condition": "Good",
+    "age": 4.8
+  },
+  {
+    "name": "bar stool",
+    "distance": 40,
+    "condition": "Fair",
+    "age": 4.6
+  }
+]

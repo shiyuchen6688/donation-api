@@ -5,11 +5,22 @@ const itemSchema = new mongoose.Schema({
     name: {
         type: String
     },
-    year: {
+    age: {
         type: Number
     },
-    location: {
+    distance: {
         type: String
+    },
+    createdAt: {
+        type: Date,
+        defult: Date.now()
+    },
+    condition: {
+        type: String,
+        enum: {
+            values: ["Like New", "Very Good", "Good", "Fair"],
+            message: '{Value} is not supported, supported conditions are: "Like New", "Very Good", "Good", "Fair"'
+        }
     }
 });
 

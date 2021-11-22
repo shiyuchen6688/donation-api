@@ -1,15 +1,22 @@
 const Item = require("../models/item.js")
-const asyncWrapper = require("../middlewares/async")
 
-console.log(asyncWrapper)
 
-const getAllItemTest = asyncWrapper(async (req, res) => {
+
+const getAllItemTest = async (req, res) => {
     const products = await Item.find({})
-    res.send("look like it's working haha");
-})
-const getAllItems = asyncWrapper(async (req, res) => {
+    res.statis(200).json(products)
+}
+const getAllItems = async (req, res) => {
     const products = await Item.find({})
     res.status(200).send(products)
-})
+}
 
-module.exports = { getAllItems, getAllItemTest }
+const getFilteredItems = async (req, res) => {
+    const filteredItems = Item.find(req.query)
+    res.status(200).json({
+        items: filteredItems,
+        nbHits: filteredItems.length
+    })
+}
+
+module.exports = { getAllItems, getAllItemTest, getFilteredItems }

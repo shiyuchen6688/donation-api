@@ -1,4 +1,5 @@
 require("dotenv").config();
+require("express-async-errors"); // TODO: research about this
 const errorHandlerMiddleware = require("./middlewares/error_handler");
 const notFoundMiddleware = require("./middlewares/not-found");
 const itemRouter = require("./routes/items")

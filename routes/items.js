@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const { getAllItemTest, getAllItems } = require("../controllers/items")
+const { getAllItemTest, getAllItems, getFilteredItems } = require("../controllers/items")
 
-router.use("/", getAllItemTest);
+router.use("/", getFilteredItems);
 
 module.exports = router
