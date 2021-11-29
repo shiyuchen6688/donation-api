@@ -28,5 +28,17 @@
     "distance": 40,
     "condition": "Fair",
     "age": 4.6
+  },
+  {
+    "name": "ab chair",
+    "distance": 5,
+    "condition": "Fair",
+    "age": 3
+  },
+  {
+    "name": "ab chair",
+    "distance": 6,
+    "condition": "Fair",
+    "age": 3
   }
 ]
