@@ -18,7 +18,7 @@ const itemSchema = new mongoose.Schema({
     condition: {
         type: String,
         enum: {
-            values: ["Like New", "Very Good", "Good", "Fair"],
+            values: ["New", "Like New", "Very Good", "Good", "Fair"],
             message: '{Value} is not supported, supported conditions are: "Like New", "Very Good", "Good", "Fair"'
         }
     }
